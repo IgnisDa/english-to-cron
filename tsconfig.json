@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["ES2020"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationDir": "dist/esm",
+    "outDir": "dist/esm",
+    "rootDir": "src",
+    "ignoreDeprecations": "6.0",
+    "types": ["@types/bun"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

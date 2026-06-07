@@ -1,0 +1,39 @@
+{
+  "name": "english-to-cron",
+  "version": "0.1.0",
+  "description": "Converts natural language English descriptions into cron expressions",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "bun test",
+    "lint": "tsc --noEmit -p tsconfig.test.json"
+  },
+  "keywords": [
+    "cron",
+    "cronjob",
+    "natural-language",
+    "english",
+    "scheduler"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@types/bun": "^1.3.14",
+    "rollup": "^4.61.1",
+    "rollup-plugin-dts": "^6.4.1",
+    "tslib": "^2.8.1",
+    "typescript": "^6.0.3"
+  }
+}
